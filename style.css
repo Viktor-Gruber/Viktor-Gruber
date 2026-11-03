@@ -8,8 +8,10 @@ body {
     background-color: #1e1e1e;
     font-family: Arial, sans-serif;
     line-height: 1.5;
+    background-image: radial-gradient(#322f2f 2px, #1e1d1d);
    
-}
+    
+}s
 
 h1 {
     color: #4fc3f7;
@@ -97,3 +99,22 @@ button img {
     width: 150px;
     max-width: 40%;
 }
+@keyframes wackeln{
+    0% {transform: translateX(0px);}
+    20% {transform: translateX(-10px);}
+    50% {transform: translateX(+10px);}
+    60% {transform: translateX(-10px);}
+    80% {transform: translateX(+10px);}
+    90% {transform: translateX(-10px);}
+    100% {transform: translateX(0px);}
+}
+.wackeln {
+    animation: wackeln 0.5s;
+}
+
+
+
+
+ 
+
+

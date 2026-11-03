@@ -40,13 +40,20 @@ function spielen(spielerWahl) {
         player += 1
         playeranzeige.textContent = "Spieler: " + player;
         confetti();
-        
     } else {
         console.log("Du hast verloren");
         ergebnis.textContent = "Verloren";
         computer += 1
+        ergebnis.classList.add("wackeln");
     }
     computeranzeige.textContent = "Computer: " + computer;
+
+        if (player == 3) {
+    confetti() }
+        else if (computer === 3) {   
+        ergebnis.classList.add("wackeln");
+        }
+    
    
 };
 // spiele Button
@@ -80,5 +87,4 @@ document.getElementById("restart").addEventListener("click", function () {
     playeranzeige.textContent = "Spieler: " + player;
     computeranzeige.textContent = "Computer: " + computer;
 })
-// test
 
