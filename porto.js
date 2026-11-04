@@ -1,7 +1,7 @@
 console.log("Hello, World!");
 // liste aufpassen const kann man nicht mehr ändern let schon :)
 // o doch sr, mit einen push :( btw das ist der scope der zwischen raum für alle 
-    
+
 const playeranzeige = document.getElementById("player")
     const spielerw = document.getElementById("spielerw")
     const computerw = document.getElementById("computerw")
@@ -11,15 +11,17 @@ const playeranzeige = document.getElementById("player")
     let player = 0
     let computer = 0
 const moeglichkeiten = ["Schere", "Stein", "Papier"];
-function spielen(spielerWahl) {
+function spielen (spielerWahl) { 
+    
     // Math floor für keine kommazahlen
     
     let zufall = Math.floor(Math.random() * 3);
     let computerWahl = moeglichkeiten[zufall];
     console.log("Du:", spielerWahl, "Computer:", computerWahl);
     // Für die Konsole zum Testen document (console.log)
-   
     const ergebnis = document.getElementById("ergebnis")
+    ergebnis.classList.remove("wackeln")
+    void ergebnis.offsetWidth;
      spielerw.textContent = "Spieler: " + spielerWahl;
     spielerbild.src = spielerWahl.toLowerCase() + ".png";
    
@@ -48,12 +50,12 @@ function spielen(spielerWahl) {
     }
     computeranzeige.textContent = "Computer: " + computer;
 
-        if (player == 3) {
-    confetti() }
-        else if (computer === 3) {   
-        ergebnis.classList.add("wackeln");
-        }
-    
+    if (player == 3) {
+        confetti() }
+            else if (computer === 3) {   
+            ergebnis.classList.add("wackeln");
+            }
+        
    
 };
 // spiele Button
