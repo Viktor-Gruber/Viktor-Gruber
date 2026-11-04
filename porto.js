@@ -3,6 +3,9 @@ console.log("Hello, World!");
 // o doch sr, mit einen push :( btw das ist der scope der zwischen raum für alle 
 
 const playeranzeige = document.getElementById("player")
+    const Schere = document.getElementById("Schere")
+    const Papier = document.getElementById("Papier")
+    const Stein = document.getElementById("Stein")
     const spielerw = document.getElementById("spielerw")
     const computerw = document.getElementById("computerw")
     const computeranzeige = document.getElementById("computer")
@@ -49,10 +52,20 @@ function spielen (spielerWahl) {
         ergebnis.classList.add("wackeln");
     }
     computeranzeige.textContent = "Computer: " + computer;
+    if (player === 3) {
+        ergebnis.textContent = "Du hast gewonnen 😎😎😎😎"
+        Schere.disabled = true;
+        Papier.disabled = true;
+        Stein.disabled = true;
+        confetti() }
+            else if (computer === 3) {   
+            ergebnis.classList.add("wackeln");
+            ergebnis.textContent = "Computer Gewinnt 🤖🤖🤖🤖"
+            Schere.disabled = true;
+            Papier.disabled = true;
+            Stein.disabled = true;
 
-   
-   
-};
+}};
 // spiele Button
 document.getElementById("x").addEventListener("click", function () {
 
@@ -83,5 +96,8 @@ document.getElementById("restart").addEventListener("click", function () {
     computer = 0
     playeranzeige.textContent = "Spieler: " + player;
     computeranzeige.textContent = "Computer: " + computer;
+    Schere.disabled = false;
+    Stein.disabled = false;
+    Papier.disabled = false;
 })
 
