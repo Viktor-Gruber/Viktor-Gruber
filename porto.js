@@ -50,12 +50,7 @@ function spielen (spielerWahl) {
     }
     computeranzeige.textContent = "Computer: " + computer;
 
-    if (player == 3) {
-        confetti() }
-            else if (computer === 3) {   
-            ergebnis.classList.add("wackeln");
-            }
-        
+   
    
 };
 // spiele Button
