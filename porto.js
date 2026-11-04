@@ -11,6 +11,8 @@ const playeranzeige = document.getElementById("player")
     const computeranzeige = document.getElementById("computer")
     const computerbild = document.getElementById("computerbild")
     const spielerbild = document.getElementById("spielerbild")
+    const endlosbutton = document.getElementById("endlos")
+    let endlos = false
     let player = 0
     let computer = 0
 const moeglichkeiten = ["Schere", "Stein", "Papier"];
@@ -41,7 +43,7 @@ function spielen (spielerWahl) {
         (spielerWahl === "Stein" && computerWahl === "Schere")
     ) { // textContent für die webseite text ist verbunden mit ergebnis
         console.log("Du hast gewonnen" + ergebnis);
-        ergebnis.textContent = "Super gewonnen";
+        ergebnis.textContent = "Super Gewonnen";
         player += 1
         playeranzeige.textContent = "Spieler: " + player;
         confetti();
@@ -52,8 +54,9 @@ function spielen (spielerWahl) {
         ergebnis.classList.add("wackeln");
     }
     computeranzeige.textContent = "Computer: " + computer;
+    if (endlos === false )
     if (player === 3) {
-        ergebnis.textContent = "Du hast gewonnen 😎😎😎😎"
+        ergebnis.textContent = "Du hast Gewonnen 😎😎😎😎"
         Schere.disabled = true;
         Papier.disabled = true;
         Stein.disabled = true;
@@ -100,4 +103,18 @@ document.getElementById("restart").addEventListener("click", function () {
     Stein.disabled = false;
     Papier.disabled = false;
 })
+// Unendlicher Modus 
+endlosbutton.addEventListener("click", function () {
+    endlos = !endlos
+    if (endlos === true ){
+        endlosbutton.textContent = "Endlos Modus An"
+        disabled = ergebnis
+        Schere.disabled = false;
+        Stein.disabled = false;
+        Papier.disabled = false;
 
+
+    }else {        
+        endlosbutton.textContent = "Endlos Modus Aus"
+        
+}})

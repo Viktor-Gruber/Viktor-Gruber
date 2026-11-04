@@ -111,7 +111,9 @@ button img {
 .wackeln {
     animation: wackeln 0.5s;
 }
-
+#endlos {
+    background-color: #d03939;
+}
 
 
 
