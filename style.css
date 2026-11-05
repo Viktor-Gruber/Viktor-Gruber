@@ -9,10 +9,11 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
     background-image: radial-gradient(#262a2a 3px, #1e1d1d);
-    background-image: url("jakub-zerdzicki-2DkNX2wVVY4-unsplash.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("jakub-zerdzicki-2DkNX2wVVY4-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    
 }s
 
 h1 {
