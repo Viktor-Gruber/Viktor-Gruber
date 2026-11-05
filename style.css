@@ -114,7 +114,12 @@ button img {
 #endlos {
     background-color: #d03939;
 }
-
+@media (max-width: 500px) {
+    .profilbild {
+    width: 120px;
+    height: auto;
+    }
+}
 
 
  
