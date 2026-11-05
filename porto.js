@@ -3,25 +3,26 @@ console.log("Hello, World!");
 // o doch sr, mit einen push :( btw das ist der scope der zwischen raum für alle 
 
 const playeranzeige = document.getElementById("player")
-    const Schere = document.getElementById("Schere")
-    const Papier = document.getElementById("Papier")
-    const Stein = document.getElementById("Stein")
-    const spielerw = document.getElementById("spielerw")
-    const computerw = document.getElementById("computerw")
-    const computeranzeige = document.getElementById("computer")
-    const computerbild = document.getElementById("computerbild")
-    const spielerbild = document.getElementById("spielerbild")
-    const endlosbutton = document.getElementById("endlos")
-    const Spielefeld = document.getElementById("spielefeld")
-    const spielebutton = document.getElementById("x")
-    let endlos = false
-    let player = 0
-    let computer = 0
+const Schere = document.getElementById("Schere")
+const Papier = document.getElementById("Papier")
+const Stein = document.getElementById("Stein")
+const spielerw = document.getElementById("spielerw")
+const computerw = document.getElementById("computerw")
+const computeranzeige = document.getElementById("computer")
+const computerbild = document.getElementById("computerbild")
+const spielerbild = document.getElementById("spielerbild")
+const endlosbutton = document.getElementById("endlos")
+const Spielefeld = document.getElementById("spielefeld")
+const spielebutton = document.getElementById("x")
+const spielbereich = document.getElementById("spiele")
+let endlos = false
+let player = 0
+let computer = 0
 const moeglichkeiten = ["Schere", "Stein", "Papier"];
-function spielen (spielerWahl) { 
-    
+function spielen(spielerWahl) {
+
     // Math floor für keine kommazahlen
-    
+
     let zufall = Math.floor(Math.random() * 3);
     let computerWahl = moeglichkeiten[zufall];
     console.log("Du:", spielerWahl, "Computer:", computerWahl);
@@ -29,12 +30,12 @@ function spielen (spielerWahl) {
     const ergebnis = document.getElementById("ergebnis")
     ergebnis.classList.remove("wackeln")
     void ergebnis.offsetWidth;
-     spielerw.textContent = "Spieler: " + spielerWahl;
+    spielerw.textContent = "Spieler: " + spielerWahl;
     spielerbild.src = spielerWahl.toLowerCase() + ".png";
-   
+
     computerbild.src = computerWahl.toLowerCase() + ".png";
     document.getElementById("bilder").hidden = false;
-        computerw.textContent = "Computer: " + computerWahl;
+    computerw.textContent = "Computer: " + computerWahl;
     if (spielerWahl === computerWahl) {
         console.log("Unentschieden!");
         ergebnis.textContent = "Unentschieden";
@@ -56,30 +57,23 @@ function spielen (spielerWahl) {
         ergebnis.classList.add("wackeln");
     }
     computeranzeige.textContent = "Computer: " + computer;
-    if (endlos === false )
-    if (player === 3) {
-        ergebnis.textContent = "Du hast Gewonnen 😎😎😎😎"
-        Schere.disabled = true;
-        Papier.disabled = true;
-        Stein.disabled = true;
-        confetti() }
-            else if (computer === 3) {   
+    if (endlos === false)
+        if (player === 3) {
+            ergebnis.textContent = "Du hast Gewonnen 😎😎😎😎"
+            Schere.disabled = true;
+            Papier.disabled = true;
+            Stein.disabled = true;
+            confetti()
+        }
+        else if (computer === 3) {
             ergebnis.classList.add("wackeln");
             ergebnis.textContent = "Computer Gewinnt 🤖🤖🤖🤖"
             Schere.disabled = true;
             Papier.disabled = true;
             Stein.disabled = true;
 
-}};
-// x spiele Button
-document.getElementById("x").addEventListener("click", function () {
-
-    document.getElementById("spiele").hidden = false;
-    x = !x
-    if (x === true)
-    spielefeld.hidden
-
-});
+        }
+};
 // Wupp schere button
 
 document.getElementById("Schere").addEventListener("click", function () {
@@ -97,7 +91,7 @@ document.getElementById("Stein").addEventListener("click", function () {
 
 document.getElementById("Papier").addEventListener("click", function () {
     // snipi snapi snu aaaaaaaaaaaaa
-   spielen("Papier")
+    spielen("Papier")
 });
 // restart Button
 document.getElementById("restart").addEventListener("click", function () {
@@ -108,21 +102,31 @@ document.getElementById("restart").addEventListener("click", function () {
     Schere.disabled = false;
     Stein.disabled = false;
     Papier.disabled = false;
+
 })
 // Unendlicher Modus 
 endlosbutton.addEventListener("click", function () {
     endlos = !endlos
-    if (endlos === true ){
+    if (endlos === true) {
         endlosbutton.textContent = "Endlos Modus An"
-        disabled = ergebnis
-        Schere.disabled = false;
-        Stein.disabled = false;
-        Papier.disabled = false;
 
-
-    }else {        
+    } else {
         endlosbutton.textContent = "Endlos Modus Aus"
-        
-}})
+    }
+})
+// Spielefeld verstecken war nicht ez :(
+spielebutton.addEventListener("click", function () {
+    if (spielbereich.hidden === true) {
+        spielbereich.hidden = false
+        spielebutton.textContent = "Ausblenden"
+    } else {
+        spielbereich.hidden = true
+        spielebutton.textContent = "Spielen"
+    }
+});
+
+
+
+
 
 
