@@ -12,6 +12,8 @@ const playeranzeige = document.getElementById("player")
     const computerbild = document.getElementById("computerbild")
     const spielerbild = document.getElementById("spielerbild")
     const endlosbutton = document.getElementById("endlos")
+    const Spielefeld = document.getElementById("spielefeld")
+    const spielebutton = document.getElementById("x")
     let endlos = false
     let player = 0
     let computer = 0
@@ -69,10 +71,14 @@ function spielen (spielerWahl) {
             Stein.disabled = true;
 
 }};
-// spiele Button
+// x spiele Button
 document.getElementById("x").addEventListener("click", function () {
 
     document.getElementById("spiele").hidden = false;
+    x = !x
+    if (x === true)
+    spielefeld.hidden
+
 });
 // Wupp schere button
 
@@ -118,3 +124,5 @@ endlosbutton.addEventListener("click", function () {
         endlosbutton.textContent = "Endlos Modus Aus"
         
 }})
+
+
