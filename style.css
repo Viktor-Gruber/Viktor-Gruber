@@ -123,6 +123,25 @@ button img {
     height: auto;
     }
 }
+/*Schummler 
+width = breite
+height = Höhe
+margin = Außenabstand
+padding = Innenabstand
+border = Rahmen
+border-radius = Eckenrundung
+display = Anzeigeart (flex macht den text in einer zeile )
+flex-direction = Richtung
+justify-content = Verteilung in der Hauptrichtung
+align-items = verschiebt die sachen da gibt es (center,flex-start(oben)flex-end stretch)
+gap = abstand
+wrap = (flex-wrap macht das wenn du am handy schaust und der text ist zu lang das es in die nexte zeile rutchst) 
+background = hintergrund
+font = Schriftart
+text-decoration = Textverzierung
+transform = verschieben (zum translateX (x achse + is recht - ist links  y achse + unten - oben, scale, rotate )
+transition = Macht übergang weich zum beispiel verbunden mit transform 
+hover = drüberfahren mit der Maus */ 
 
 
  
