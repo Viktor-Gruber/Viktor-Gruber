@@ -14,7 +14,8 @@ body {
     background-position: center;
     background-attachment: fixed;
     
-}s
+}
+
 
 h1 {
     color: #4fc3f7;
@@ -43,11 +44,10 @@ header {
 a {
     color: rgb(42, 149, 165);
     text-decoration: none;
-}
-/* restart butrton */ 
-#x button {
-    color: rgb(20, 3, 92);
-    background-color: #e0e0e0;
+} 
+#x {
+    color: rgb(0, 0, 0);
+    background-color: #f9f8f8;
     text-align: center;
     
 }
@@ -123,6 +123,13 @@ button img {
     height: auto;
     }
 }
+#hello {
+    color:#fbff00
+}
+#title {
+    color:#fbff00
+}
+
 /*Schummler 
 width = breite
 height = Höhe

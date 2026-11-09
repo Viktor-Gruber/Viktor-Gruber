@@ -57,22 +57,22 @@ function spielen(spielerWahl) {
         ergebnis.classList.add("wackeln");
     }
     computeranzeige.textContent = "Computer: " + computer;
-    if (endlos === false)
-        if (player === 3) {
-            ergebnis.textContent = "Du hast Gewonnen 😎😎😎😎"
-            Schere.disabled = true;
-            Papier.disabled = true;
-            Stein.disabled = true;
-            confetti()
-        }
-        else if (computer === 3) {
-            ergebnis.classList.add("wackeln");
-            ergebnis.textContent = "Computer Gewinnt 🤖🤖🤖🤖"
-            Schere.disabled = true;
-            Papier.disabled = true;
-            Stein.disabled = true;
+    if (endlos === false) { }
+    if (player === 3) {
+        ergebnis.textContent = "Du hast Gewonnen 😎😎😎😎"
+        Schere.disabled = true;
+        Papier.disabled = true;
+        Stein.disabled = true;
+        confetti()
+    }
+    else if (computer === 3) {
+        ergebnis.classList.add("wackeln");
+        ergebnis.textContent = "Computer Gewinnt 🤖🤖🤖🤖"
+        Schere.disabled = true;
+        Papier.disabled = true;
+        Stein.disabled = true;
 
-        }
+    }
 };
 // Wupp schere button
 
@@ -90,7 +90,6 @@ document.getElementById("Stein").addEventListener("click", function () {
 // Papier
 
 document.getElementById("Papier").addEventListener("click", function () {
-    // snipi snapi snu aaaaaaaaaaaaa
     spielen("Papier")
 });
 // restart Button
@@ -124,8 +123,38 @@ spielebutton.addEventListener("click", function () {
         spielebutton.textContent = "Spielen"
     }
 });
+const helloText = "// Hello, World";
+let i = 0;
+function type() {
+    if (i <= helloText.length) {
+        document.getElementById("hello").textContent = helloText.slice(0, i++);
+        setTimeout(type, 89);
+    };
+}
+type();
 
 
+
+/* Schummler
+const = variable die sich nicht ändern
+let = können sich ändern
+function name() {} (definieren)
+name()= aufrufen
+if / else (wenn,sonnst)
+===:  ist genau ?
+=:  Wert zuweisen
+! aus true wird false oder umgekehrt
+i++: um 1 erhöhen
+.textContent der text in einen element
+addEventListener("click"): mach was wenn wer drückt
+setTimeout(funktion, 89) Mach was nach 89 milisekungden
+.length: länge fragen 
+.slice(0, i): auschneiden
+console.log(): wird in der console ausgegeben 
+Math.random: random zahl 
+.toLowerCase(): alles klein schreiben
+&& vergleicht 2 sachen wenn falsch dann || (heißt oder und geht zum nexten wenn nur eins richtig ist)
+*/
 
 
 
