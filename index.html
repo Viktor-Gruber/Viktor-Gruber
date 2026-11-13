@@ -12,13 +12,13 @@
 
 <body>
     <nav>
-    <a href="#mich">Über mich</a>
-    <a href="#kenntnisse">Kenntnisse</a> 
-    <a href="#spiele">Minispiel</a>
-    <a href="#kontakte">Kontakte</a>
-    <a href="#hobbys">Hobbys</a>
+        <a href="#mich">Über mich</a>
+        <a href="#kenntnisse">Kenntnisse</a>
+        <a href="#spiele">Minispiel</a>
+        <a href="#kontakte">Kontakte</a>
+        <a href="#hobbys">Hobbys</a>
 
- </nav>
+    </nav>
     <main>
         <header>
             <div class="hello"><span id="hello"></span><span class="cursor">&nbsp;</span></div>
@@ -27,88 +27,106 @@
                 <p>Angehender Applikationsentwickler</p>
             </div>
             <img class="profilbild" src="Bild1.jpg" alt="Foto von Viktor Gruber">
-        </header><section id="mich"> </section>
-        <section>
+        </header>
+        <section id="mich">
             <h2>Über mich</h2>
-       
-            
-        <p>Ich bin hier, um in die Applikationsentwicklung einzusteigen. Warum? Dazu eine kleine Geschichte, wie ich zu diesem Weg gekommen bin: </p>
 
-        <p>Mit 15 habe ich als Bäcker zu arbeiten angefangen. Mit 16 habe ich mir von meinem Lohn den ersten PC gekauft und selbst 
-            zusammengebaut. Zuerst nur für Computerspiele, aber bald wollte ich wissen, was im Hintergrund passiert. Mit 19 habe ich angefangen, YouTube-Tutorials nachzubauen. </p>
 
-        <p>Nach dem Bundesheer hatte ich zum ersten Mal richtig Zeit und habe ausprobiert, wie ein Spiel eigentlich funktioniert. Ich habe mit den Game-Engines Unity 
-            und Unreal Engine experimentiert. 2019 hat dann meine Firma zugesperrt, und mitten in der Corona-Pandemie brauchte ich dringend eine neue Arbeit. So bin ich 
-            Maurer geworden und habe sechs Jahre auf Baustellen gearbeitet, oft auswärts. Für das Programmieren blieb kaum Zeit.</p>
+            <p>Ich bin hier, um in die Applikationsentwicklung einzusteigen. Warum? Dazu eine kleine Geschichte, wie ich
+                zu diesem Weg gekommen bin: </p>
 
-        <p>Dann kamen Rückenprobleme dazu. Immer wieder musste ich für ein paar Wochen pausieren, habe es danach wieder probiert, und kurz darauf ging es wieder nicht. In diesen Pausen habe ich angefangen, Python zu lernen, 
-            weil es als besonders einsteigerfreundlich gilt. Vor Kurzem bin ich auf Godot gestoßen, dessen Sprache GDScript Python sehr ähnlich ist. Da stehe ich aber noch ganz am Anfang. Als mein Arzt mir geraten hat, den Beruf als Maurer 
-            aufzugeben, habe ich aufgehört, bevor es schlimmer wurde, und die Gelegenheit genutzt: 
-            Jetzt mache ich beim BBRZ eine Umschulung zum Applikationsentwickler. Mein Ziel ist, mein Hobby zum Beruf zu machen. </p>
-            <section id="spiele"> </section> 
-            <p> Aktuell suche ich ein Praktikum in der Softwareentwicklung, gerne in Wien oder Niederösterreich. Meine Umschulung dauert ca. 2,5 Jahre. Für Ihr Unternehmen
-                 ist das Praktikum kostenlos, da ich während der Umschulung über das BBRZ versichert bin.
-                Wenn Sie einen Platz haben oder eine Firma kennen, melden Sie sich gerne bei mir!</p> 
+            <p>Mit 15 habe ich als Bäcker zu arbeiten angefangen. Mit 16 habe ich mir von meinem Lohn den ersten PC
+                gekauft und selbst
+                zusammengebaut. Zuerst nur für Computerspiele, aber bald wollte ich wissen, was im Hintergrund passiert.
+                Mit 19 habe ich angefangen, YouTube-Tutorials nachzubauen. </p>
+
+            <p>Nach dem Bundesheer hatte ich zum ersten Mal richtig Zeit und habe ausprobiert, wie ein Spiel eigentlich
+                funktioniert. Ich habe mit den Game-Engines Unity
+                und Unreal Engine experimentiert. 2019 hat dann meine Firma zugesperrt, und mitten in der
+                Corona-Pandemie brauchte ich dringend eine neue Arbeit. So bin ich
+                Maurer geworden und habe sechs Jahre auf Baustellen gearbeitet, oft auswärts. Für das Programmieren
+                blieb kaum Zeit.</p>
+
+            <p>Dann kamen Rückenprobleme dazu. Immer wieder musste ich für ein paar Wochen pausieren, habe es danach
+                wieder probiert, und kurz darauf ging es wieder nicht. In diesen Pausen habe ich angefangen, Python zu
+                lernen,
+                weil es als besonders einsteigerfreundlich gilt. Vor Kurzem bin ich auf Godot gestoßen, dessen Sprache
+                GDScript Python sehr ähnlich ist. Da stehe ich aber noch ganz am Anfang. Als mein Arzt mir geraten hat,
+                den Beruf als Maurer
+                aufzugeben, habe ich aufgehört, bevor es schlimmer wurde, und die Gelegenheit genutzt:
+                Jetzt mache ich beim BBRZ eine Umschulung zum Applikationsentwickler. Mein Ziel ist, mein Hobby zum
+                Beruf zu machen. </p>
+
+            <p> Aktuell suche ich ein Praktikum in der Softwareentwicklung, gerne in Wien oder Niederösterreich. Meine
+                Umschulung dauert ca. 2,5 Jahre. Für Ihr Unternehmen
+                ist das Praktikum kostenlos, da ich während der Umschulung über das BBRZ versichert bin.
+                Wenn Sie einen Platz haben oder eine Firma kennen, melden Sie sich gerne bei mir!</p>
         </section>
-        
-        <section id="spielefeld"><h2>Minispiel</h2>
+
+        <section id="spielefeld">
+            <h2>Minispiel</h2>
             <p><button id="x">Spielen?</button></p>
-        <div id="spiele" hidden>
-            <div id="wahltext">
-                <div id="spielerw"></div>
-                <div id="computerw"></div>
+            <div id="spiele" hidden>
+                <div id="wahltext">
+                    <div id="spielerw"></div>
+                    <div id="computerw"></div>
+                </div>
+                <div id="bilder" hidden>
+                    <img alt="Spielerwahl" id="spielerbild">
+                    <img alt="Computerauswahl" id="computerbild">
+                </div>
+                <p id="ergebnis"></p>
+                <div id="punktestand">
+                    <p id="player">Spieler: 0</p>
+                    <p id="computer">Computer: 0</p>
+                </div>
+                <button id="Schere"><img src="schere.png" alt="Schere">Schere</button>
+                <button id="Stein"><img src="stein.png" alt="Stein">Stein</button>
+                <button id="Papier"><img src="papier.png" alt="Papier">Papier</button>
+                <p></p>
+                <button id="restart">Restart</button><button id="endlos">Endlos Modus</button>
             </div>
-            <div id="bilder" hidden>
-                <img alt="Spielerwahl" id="spielerbild"> 
-                <img alt="Computerauswahl" id="computerbild"></div>
-            <p id="ergebnis"></p>
-            <div id="punktestand">
-            <p id="player">Spieler: 0</p>
-            <p id="computer">Computer: 0</p></div>
-            <button id="Schere"><img src="schere.png" alt="Schere">Schere</button>git add .; git commit -m "Navigation und Handy-Ansicht"; git push
-            <button id="Stein"><img src="stein.png" alt="Stein">Stein</button>
-            <button id="Papier"><img src="papier.png" alt="Papier">Papier</button>
-            <p></p>
-            <button id="restart">Restart</button><button id="endlos">Endlos Modus</button>
-        </div>
         </section>
-        
 
-       
+
+        <section id="kenntnisse">
             <h2>Kenntnisse</h2>
-            <section id="kenntnisse"> </section>
-        <ul>
-            <li><strong>Programmiersprachen:</strong> Python (Grundlagen), JavaScript (Grundlagen), Java (Grundkenntnisse), GdScript (erste Schritte)</li>
-            <li><strong>Web:</strong> HTML,CSS(inkl. Flexbox)</li>
-            <li><strong>Werkzeuge:</strong> Git, GitHub, Github Pages, VS Code</li>
-            <li><strong>Game-Engines:</strong> Godot, Unreal Engine, Unity (erste eigene Projekte),</li>
-            <li><strong>Sonstige:</strong> MS Office, Windows, PC-Hardware (Zusammenbau) Blender (Einsteiger)</li>
-            
-        </ul></section>
 
-        
-            <h2>Hobbys</h2>
-            <section id="hobbys"> </section>
-        <ul>
-            <li>Skifahren</li>
-            <li>Computerspiele</li>
-            <li>Wandern</li>
-        </ul>
+            <ul>
+                <li><strong>Programmiersprachen:</strong> Python (Grundlagen), JavaScript (Grundlagen), Java
+                    (Grundkenntnisse), GDScript (erste Schritte)</li>
+                <li><strong>Web:</strong> HTML, CSS (inkl. Flexbox)</li>
+                <li><strong>Werkzeuge:</strong> Git, GitHub, Github Pages, VS Code</li>
+                <li><strong>Game-Engines:</strong> Godot, Unreal Engine, Unity (erste eigene Projekte)</li>
+                <li><strong>Sonstige:</strong> MS Office, Windows, PC-Hardware (Zusammenbau), Blender (Einsteiger)</li>
 
-        <section>
-            <h2>Kontakt</h2>
+            </ul>
         </section>
-        <p><strong>Email:</strong> <a href="mailto:viktor-01@gmx.at">viktor-01@gmx.at</a></p>
-        <p><strong>Github:</strong> <a href="https://github.com/Viktor-Gruber" target="_blank" rel="noopener">Github</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/viktor-gruber-840440444" target="_blank" rel="noopener">LinkedIn</a></p>
-        <p><strong>Vibe Code Portfolio:</strong> <a href="https://viktor-gruber.github.io/portfolio-ki/" target="_blank" rel="noopener">Portfolio-ki</a></p>
+        <section id="hobbys">
+            <h2>Hobbys</h2>
+
+            <ul>
+                <li>Skifahren</li>
+                <li>Computerspiele</li>
+                <li>Wandern</li>
+            </ul>
+        </section>
         <section id="kontakte"></section>
+        <h2>Kontakt</h2>
+
+        <p><strong>Email:</strong> <a href="mailto:viktor-01@gmx.at">viktor-01@gmx.at</a></p>
+        <p><strong>Github:</strong> <a href="https://github.com/Viktor-Gruber" target="_blank" rel="noopener">Github</a>
+        </p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/viktor-gruber-840440444" target="_blank"
+                rel="noopener">LinkedIn</a></p>
+        <p><strong>Vibe Code Portfolio:</strong> <a href="https://viktor-gruber.github.io/portfolio-ki/" target="_blank"
+                rel="noopener">Portfolio-ki</a></p>
+
     </main>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     <script src="porto.js"></script>
-    <script data-goatcounter="https://beackbua.goatcounter.com/count"
-    async src="https://gc.zgo.at/count.js"></script>
+    <script data-goatcounter="https://beackbua.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</section>
 </body>
 
 </html>
-

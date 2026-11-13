@@ -57,21 +57,21 @@ function spielen(spielerWahl) {
         ergebnis.classList.add("wackeln");
     }
     computeranzeige.textContent = "Computer: " + computer;
-    if (endlos === false) { }
-    if (player === 3) {
-        ergebnis.textContent = "Du hast Gewonnen 😎😎😎😎"
-        Schere.disabled = true;
-        Papier.disabled = true;
-        Stein.disabled = true;
-        confetti()
-    }
-    else if (computer === 3) {
-        ergebnis.classList.add("wackeln");
-        ergebnis.textContent = "Computer Gewinnt 🤖🤖🤖🤖"
-        Schere.disabled = true;
-        Papier.disabled = true;
-        Stein.disabled = true;
-
+    if (endlos === false) {
+        if (player === 3) {
+            ergebnis.textContent = "Du hast Gewonnen 😎😎😎😎"
+            Schere.disabled = true;
+            Papier.disabled = true;
+            Stein.disabled = true;
+            confetti()
+        }
+        else if (computer === 3) {
+            ergebnis.classList.add("wackeln");
+            ergebnis.textContent = "Computer Gewinnt 🤖🤖🤖🤖"
+            Schere.disabled = true;
+            Papier.disabled = true;
+            Stein.disabled = true;
+        }
     }
 };
 // Wupp schere button
