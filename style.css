@@ -1,8 +1,7 @@
 [hidden] {
-    display:none
-    !important
-
+    display: none !important
 }
+
 body {
     color: #e0e0e0;
     background-color: #1e1e1e;
@@ -13,7 +12,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    
+
 }
 
 
@@ -24,15 +23,15 @@ h1 {
 h2 {
     color: #4fc3f7;
     text-align: center;
-    background-color:  rgb(62, 59, 56);
-    
+    background-color: rgb(62, 59, 56);
+
 }
 
 main {
     max-width: 800px;
     margin: 0 auto;
     border-radius:
-    padding 016px;
+        padding 016px;
 }
 
 header {
@@ -44,13 +43,14 @@ header {
 a {
     color: rgb(42, 149, 165);
     text-decoration: none;
-} 
+}
+
 /*Spiele button*/
 #x {
     color: rgb(0, 0, 0);
     background-color: #f9f8f8;
     text-align: center;
-    
+
 }
 
 .profilbild {
@@ -63,7 +63,7 @@ a {
 }
 
 button {
-    background-color :#1e1e1e;
+    background-color: #1e1e1e;
     align-items: center;
     color: #e0e0e0;
 }
@@ -75,74 +75,129 @@ button {
     align-items: center;
     text-align: center;
 }
-    
+
 #spielefeld {
-   
-    color:gold;
+
+    color: gold;
     align-items: center;
     text-align: center;
 }
+
 #punktestand {
     justify-content: space-between;
     display: flex
 }
+
 button img {
-  width: 50px;
+    width: 50px;
 }
+
 #bilder {
-    display:flex;
+    display: flex;
     justify-content: space-between;
 
 }
+
 #wahltext {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    
+
 }
-#bilder img{
+
+#bilder img {
     width: 150px;
     max-width: 40%;
 }
-@keyframes wackeln{
-    0% {transform: translateX(0px);}
-    20% {transform: translateX(-10px);}
-    50% {transform: translateX(+10px);}
-    60% {transform: translateX(-10px);}
-    80% {transform: translateX(+10px);}
-    90% {transform: translateX(-10px);}
-    100% {transform: translateX(0px);}
+
+@keyframes wackeln {
+    0% {
+        transform: translateX(0px);
+    }
+
+    20% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(+10px);
+    }
+
+    60% {
+        transform: translateX(-10px);
+    }
+
+    80% {
+        transform: translateX(+10px);
+    }
+
+    90% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }
+
 .wackeln {
     animation: wackeln 0.5s;
 }
+
 #endlos {
     background-color: #d03939;
 }
+
 @media (max-width: 500px) {
     .profilbild {
-    width: 120px;
-    height: auto;
+        width: 120px;
+        height: auto;
     }
 }
+
 #hello {
-    color:#fbff00
+    color: #fbff00
 }
+
 #title {
-    color:#fbff00
+    color: #fbff00
 }
-.cursor { 
+
+.cursor {
     display: inline-block;
     width: 2px;
     height: 18px;
     background-color: white;
     animation: flash steps(1) infinite 1s;
 }
+
 @keyframes flash {
-    50% {opacity: 0;}
-        
+    50% {
+        opacity: 0;
     }
 
-    
+}
+
+nav a {
+    color: #f9f8f8;
+    border: 1px solid;
+    border-color: aqua;
+    border-radius: 50px;
+    padding: 6px 18px;
+
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    top: 0%;
+    position: sticky;
+    scroll-behavior: smooth;
+    justify-content: space-evenly;
+    background-color: #1b1b1a;
+    padding: 5px
+}
+
 
 
 /*Schummler 
@@ -163,9 +218,4 @@ font = Schriftart
 text-decoration = Textverzierung
 transform = verschieben (zum translateX (x achse + is recht - ist links  y achse + unten - oben, scale, rotate )
 transition = Macht übergang weich zum beispiel verbunden mit transform 
-hover = drüberfahren mit der Maus */ 
-
-
- 
-
-
+hover = drüberfahren mit der Maus */
