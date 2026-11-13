@@ -45,6 +45,7 @@ a {
     color: rgb(42, 149, 165);
     text-decoration: none;
 } 
+/*Spiele button*/
 #x {
     color: rgb(0, 0, 0);
     background-color: #f9f8f8;
@@ -129,6 +130,20 @@ button img {
 #title {
     color:#fbff00
 }
+.cursor { 
+    display: inline-block;
+    width: 2px;
+    height: 18px;
+    background-color: white;
+    animation: flash steps(1) infinite 1s;
+}
+@keyframes flash {
+    50% {opacity: 0;}
+        
+    }
+
+    
+
 
 /*Schummler 
 width = breite
