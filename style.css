@@ -206,13 +206,13 @@ nav {
 
     /* Navigation: kleiner und kompakter */
     nav {
-        gap: 6px;
+        gap: 4px;
         padding: 6px;
     }
 
     nav a {
-        padding: 3px 10px;
-        font-size: 14px;
+        padding: 2px 8px;
+        font-size: 12px;
     }
 
     /* Text nicht am Rand kleben lassen */
