@@ -147,12 +147,6 @@ button img {
     background-color: #d03939;
 }
 
-@media (max-width: 500px) {
-    .profilbild {
-        width: 120px;
-        height: auto;
-    }
-}
 
 #hello {
     color: #fbff00
@@ -196,6 +190,35 @@ nav {
     justify-content: space-evenly;
     background-color: #1b1b1a;
     padding: 5px
+}
+@media (max-width: 500px) {
+    /* Kopfbereich: untereinander statt nebeneinander */
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .profilbild {
+        width: 120px;
+        height: auto;
+    }
+
+    /* Navigation: kleiner und kompakter */
+    nav {
+        gap: 6px;
+        padding: 6px;
+    }
+
+    nav a {
+        padding: 3px 10px;
+        font-size: 14px;
+    }
+
+    /* Text nicht am Rand kleben lassen */
+    main {
+        padding: 0 12px;
+    }
 }
 
 
