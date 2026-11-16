@@ -131,7 +131,21 @@ function type() {
         setTimeout(type, 89);
     };
 }
+
 type();
+//Der Beobachter schaut, welche Sections ins Bild kommen. Die bekommen die Klasse sichtbar, und CSS blendet sie weich ein.
+const beobachter = new IntersectionObserver(function (eintraege) {
+    eintraege.forEach(function (eintrag) {
+        if (eintrag.isIntersecting ) {
+            eintrag.target.classList.add("sichtbar");
+                 }
+    });
+});
+document.querySelectorAll("section").forEach(function (section) {
+    beobachter.observe(section);
+});
+            
+ 
 
 
 

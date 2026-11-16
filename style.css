@@ -222,6 +222,13 @@ nav {
 }
 section {
     scroll-margin-top: 70px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s;
+}
+section.sichtbar { 
+    opacity: 1;
+    transform: translatey(0);
 }
 
 
