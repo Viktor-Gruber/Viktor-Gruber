@@ -168,6 +168,7 @@ console.log(): wird in der console ausgegeben
 Math.random: random zahl 
 .toLowerCase(): alles klein schreiben
 && vergleicht 2 sachen wenn falsch dann || (heißt oder und geht zum nexten wenn nur eins richtig ist)
+hello world = Hallo Welt
 */
 
 
